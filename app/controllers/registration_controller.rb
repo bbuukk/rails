@@ -7,7 +7,7 @@ class RegistrationController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      # Redirect to a desired location on successful sign-up
+      session[:user_id] = @user.id
       redirect_to root_path, notice: "Sign up successful!"
     else
       render :new
