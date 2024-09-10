@@ -1,0 +1,16 @@
+{
+  "name": "TODOMOTO | your todos",
+  "short_name": "TODOMOTO",
+  "description": "Best app for your todos",
+  "icons": [
+    {
+      "src": "/todomoto_favicon.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000"
+}

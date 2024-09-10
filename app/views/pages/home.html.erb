@@ -1,3 +1,11 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
-<%= link_to "GO home Teddy, you are drunk", home_path %>
+<%= link_to "GO home Teddy, you are drunk", home_path, class: "nav-link"  %>
+
+<div class="alert alert-info mt-4" role="alert">
+  <%= flash[:notice] %>
+</div>
+
+<% if @user %>
+Logged in as: <%= @user.email %>
+  <% end %>

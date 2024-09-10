@@ -1,0 +1,11 @@
+PLANS (09.09.2024)
+1. - Watch 4-5 lessons, do the exercises with tests 
+2. - Exprole how to c2. - Exprole how to c
+3. - Read Well-Grounded Rubyist from 260th to300th page - 100%
+4. - Get familiar with RSpec to create tests for the lessons
+SUMMARY (09.09.2024)
+Did watched 1-4 lessons, did 1-3, 60% (3 hours)
+Researched RSpec and created tests for completed lessons (2 hour)
+Read Well-Grounded Rubyist from 260th to300th page - 100% (1.5 hour)
+Got familiar with mvc, how rails works as framework (1.5 hour)
+Watched tutorials about RoR (2 hour)
