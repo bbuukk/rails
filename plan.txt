@@ -1,8 +1,24 @@
-PLANS (09.09.2024)
-1. - Watch 4-5 lessons, do the exercises with tests 
-2. - Exprole how to c2. - Exprole how to c
-3. - Read Well-Grounded Rubyist from 260th to300th page - 100%
-4. - Get familiar with RSpec to create tests for the lessons
+PLANS (11.09.2024)
+1. - 7,12,13 lessons of ruby basic
+2. - Get familiar with gems for testing, linting and etc. for ror
+3. - Read Agile Web Dev in ror, try out examples from the book
+
+
+7:40 - 8:10 | getting familiar with rspec, rubocop, pry gems
+8:10 - 8:30 | reading well-groundeed rubyist: with trying out examples from the book
+8:30 - 9:00 | breakfest 
+9:00 - 9:30 | setting up docker 
+10:00 - 11:20 | reading well-grounded rubyist
+11:20 - 12:00 | doing exercises on ruby lang on codewars
+12:00 - 12:20 | Learning what migrations and associations in ror are reading docs on rubyonrails.com
+12:20 - 13:10 | dinner, watching about docker and containers
+13:20 - 13:30 | reading nda
+13:35 - 13:   | reading agile ror
+
+
+
+
+
 SUMMARY (09.09.2024)
 Did watched 1-4 lessons, did 1-3, 60% (3 hours)
 Researched RSpec and created tests for completed lessons (2 hour)

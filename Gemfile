@@ -20,13 +20,22 @@ group :development, :test do
   gem "brakeman", require: false
 
   gem "rubocop-rails-omakase", require: false
+
+  gem "rubocop-rspec"
 end
 
 group :development do
   gem "web-console"
+
+  gem "pry", "~> 0.14.2"
+  gem "rubocop", require: false
+  gem "faker"
 end
 
 group :test do
+  gem "rspec-rails"
   gem "capybara"
   gem "selenium-webdriver"
+
+  gem "simplecov"
 end
