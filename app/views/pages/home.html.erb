@@ -12,3 +12,8 @@
 <% if @user %>
 Logged in as: <%= @user.email %>
   <% end %>
+
+
+<% @files.each do |file| %>
+  file name is: <%= file %> </br>
+<% end %>

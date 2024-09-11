@@ -5,5 +5,7 @@ class PagesController < ApplicationController
     end
 
     @time = Time.now
+
+    @files = Dir.entries("./")
   end
 end

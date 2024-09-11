@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   get "sign_up", to: "registration#new"
   post "sign_up", to: "registration#create"
 
+  resources :tasks
+
   root to: "pages#home"
 end

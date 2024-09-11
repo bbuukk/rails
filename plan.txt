@@ -4,16 +4,20 @@ PLANS (11.09.2024)
 3. - Read Agile Web Dev in ror, try out examples from the book
 
 
-7:40 - 8:10 | getting familiar with rspec, rubocop, pry gems
-8:10 - 8:30 | reading well-groundeed rubyist: with trying out examples from the book
-8:30 - 9:00 | breakfest 
-9:00 - 9:30 | setting up docker 
+7:40 - 8:10   | getting familiar with rspec, rubocop, pry gems
+8:10 - 8:30   | reading well-groundeed rubyist: with trying out examples from the book
+8:30 - 9:00   | breakfest 
+9:00 - 9:30   | setting up docker 
 10:00 - 11:20 | reading well-grounded rubyist
 11:20 - 12:00 | doing exercises on ruby lang on codewars
 12:00 - 12:20 | Learning what migrations and associations in ror are reading docs on rubyonrails.com
 12:20 - 13:10 | dinner, watching about docker and containers
 13:20 - 13:30 | reading nda
-13:35 - 13:   | reading agile ror
+13:35 - 16:00 | reading agile ror
+16:00 - 16:15 | researching about hotwire
+16:15 - 17:00 | writing ror app, practicing
+
+
 
 
 
