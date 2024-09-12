@@ -1,12 +1,10 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  get 'home', to: 'pages#home', as: :home
+  get "home", to: "pages#home", as: :home
 
-  get 'sign_up', to: 'registration#new'
-  post 'sign_up', to: 'registration#create'
-
+  resources :users
   resources :tasks
 
-  root to: 'pages#home'
+  root to: "pages#home"
 end
