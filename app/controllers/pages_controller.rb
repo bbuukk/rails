@@ -1,11 +1,11 @@
+# frozen_string_literal: true
+
 class PagesController < ApplicationController
   def home
-    if session[:user_id]
-      @user = User.find_by(id: session[:user_id])
-    end
+    @user = User.find_by(id: session[:user_id]) if session[:user_id]
 
     @time = Time.now
 
-    @files = Dir.entries("./")
+    @files = Dir.entries('./')
   end
 end
