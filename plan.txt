@@ -1,4 +1,4 @@
-PLANS (11.09.2024)
+laLANS (11.09.2024)
 1. - 7,12,13 lessons of ruby basic
 2. - Get familiar with gems for testing, linting and etc. for ror
 3. - Read Agile Web Dev in ror, try out examples from the book
