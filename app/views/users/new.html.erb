@@ -1,0 +1,38 @@
+
+
+<h2>SIGN UP</h2>
+<%= form_with model: @user, url: users_path, method: :post, local: true do |form| %>
+
+  <%= form.label :email %>
+  <%= form.text_field :email %>
+  <!-- 
+  <%= form.label :first_name %>
+  <%= form.text_field :first_name %>
+  <%= form.label :last_name %>
+  <%= form.text_field :last_name%> -->
+
+  <%= form.label :password %>
+  <%= form.password_field :password%>
+  
+  <%= form.label :password_confirmation %>
+  <%= form.password_field :password_confirmation %>
+
+  <%= form.submit "Sign up" %>
+<% end %>
+
+
+<h2>LOG IN</h2>
+
+<%= flash[:alert] %>
+
+<%= form_with url: login_path, method: :post, local: true do |form| %>
+
+  <%= form.label :email %>
+  <%= form.text_field :email %>
+
+  <%= form.label :password %>
+  <%= form.password_field :password%>
+  
+  <%= form.submit "Log in" %>
+
+<% end %>
