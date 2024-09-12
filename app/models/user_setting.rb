@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class UserSetting < ApplicationRecord
   belongs_to :user
 
@@ -6,8 +8,8 @@ class UserSetting < ApplicationRecord
   private
 
   def set_defaults
-    self.notification ||= "email"
-    self.color ||= "blue"
-    self.theme ||= "dark"
+    self.notification ||= 'email'
+    self.color ||= 'blue'
+    self.theme ||= 'dark'
   end
 end

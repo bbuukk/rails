@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class RegistrationController < ApplicationController
   def new
     @user = User.new
@@ -8,7 +10,7 @@ class RegistrationController < ApplicationController
 
     if @user.save
       session[:user_id] = @user.id
-      redirect_to root_path, notice: "Sign up successful!"
+      redirect_to root_path, notice: 'Sign up successful!'
     else
       render :new
     end
