@@ -13,7 +13,7 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
       redirect_to home_path, notice: 'You have been successfully signed up'
     else
-      render :new
+      @user.errors
     end
   end
 
@@ -33,8 +33,7 @@ class UsersController < ApplicationController
       session[:user_id] = user.id
       redirect_to home_path, notice: 'Logged in successfully'
     else
-      flash[:alert] = 'Invalid email or password. Try again'
-      render :new
+      @errors = ['Invalid email or password. Try again.']
     end
   end
 

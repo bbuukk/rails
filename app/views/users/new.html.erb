@@ -1,6 +1,6 @@
 <h2>SIGN UP</h2>
 
-<%= simple_form_for @user, url: users_path, method: :post do |f| %>
+<%= simple_form_for @user do |f| %>
   <%= f.input :email %>
   <%= f.input :password %>
   <%= f.input :password_confirmation %>
@@ -9,7 +9,6 @@
 <% end %>
 
 <h2>LOG IN</h2>
-<%= flash[:alert] %>
 
 <%= simple_form_for :session, url: log_in_users_path, method: :post do |f| %>
   <%= f.input :email, label: 'Email' %>
