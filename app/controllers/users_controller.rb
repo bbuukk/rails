@@ -11,7 +11,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       session[:user_id] = @user.id
-      redirect_to home_path, notice: "You have been successfully signed up"
+      redirect_to home_path, notice: 'You have been successfully signed up'
     else
       render :new
     end
@@ -24,16 +24,16 @@ class UsersController < ApplicationController
 
   def log_out
     session[:user_id] = nil
-    redirect_to root_path, notice: "Logged out successfully"
+    redirect_to root_path, notice: 'Logged out successfully'
   end
 
   def log_in
-    user = User.find_by(email: params[:email])
-    if user&.authenticate(params[:password])
+    user = User.find_by(email: params[:session][:email])
+    if user&.authenticate(params[:session][:password])
       session[:user_id] = user.id
-      redirect_to home_path, notice: "Logged in successfully"
+      redirect_to home_path, notice: 'Logged in successfully'
     else
-      flash[:alert] = "Invalid email or password. Try again"
+      flash[:alert] = 'Invalid email or password. Try again'
       render :new
     end
   end
