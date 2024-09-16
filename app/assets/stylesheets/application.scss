@@ -1,9 +1,12 @@
+@import "reset";
+@import "normalize";
+
 @import "layout/header";
 
 html {
   body {
     margin: 0;
-    background: var(--color-white-brand);
+    background: var(--color-white-back);
 
     a {
       text-decoration: none;
