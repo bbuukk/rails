@@ -1,0 +1,13 @@
+
+<header class="main-header">
+
+  <%= image_tag 'todomoto_logo.svg', alt: 'logotype', class: 'logo', width: 50, heigth: 50%>
+  <h1>TODOMOTO</h1>
+   
+<% if @user %>
+  Logged in as: <%= @user.email %>
+<%= button_to 'Log out', sign_out_path, method: :delete , class: "signout-btn" %>
+<% else %>
+<%=  link_to "Sign in", sign_in_path, class: "signin-btn"   %>
+  <% end %>
+</header>
