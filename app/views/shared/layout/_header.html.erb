@@ -1,13 +1,23 @@
 
 <header class="main-header">
-
-  <%= image_tag 'todomoto_logo.svg', alt: 'logotype', class: 'logo', width: 50, heigth: 50%>
-  <h1>TODOMOTO</h1>
-   
-<% if @user %>
-  Logged in as: <%= @user.email %>
-<%= button_to 'Log out', sign_out_path, method: :delete , class: "signout-btn" %>
-<% else %>
-<%=  link_to "Sign in", sign_in_path, class: "signin-btn"   %>
+  <%= link_to "/", aria: { label: "Go to home page" }, title: "Home page", class: "logo-link" do %>
+    <%= image_tag('todomoto_logo.svg', alt: 'logotype', class: 'logo', width: 40, height: 40) %>
+    <h1>TODOMOTO</h1>
   <% end %>
+
+  <% if @user %>
+    Logged in as: <%= @user.email %>
+    <%= button_to 'Log out', sign_out_path, method: :delete, class: "signout-btn" %>
+  <% else %>
+
+
+    <%= link_to sign_out_path, class: "signin-btn", title: "Sign in", aria: { label: "Sign in"} do %>
+      <i class="material-icons">login</i>
+    <% end %>
+
+  <% end %>
+
+  <div class="underline"></div>
+  
+
 </header>
