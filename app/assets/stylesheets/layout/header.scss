@@ -1,37 +1,86 @@
 header.main-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 
   gap: 25px;
 
-  padding: 10px;
+  padding: 10px 25vw 10px 15vw;
+
+  height: 70px;
+  width: 100vw;
+
+  border-bottom: 5px solid var(--color-white-brand2);
 
   background: var(--color-yellow-brand);
 
-  .logo {
-    width: 50px;
-    height: 50px;
-    box-shadow:
-      0 0 0px 3px var(--color-blue-brand3),
-      0 0 0px 6px var(--color-red-brand);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
 
-    box-shadow:
-      0 0 4px 2px var(--color-red-brand),
-      0 0 0px 5px var(--color-blue-brand3);
-    border-radius: 50px;
+  .logo-link {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    .logo {
+      //margin-left: 30px;
+      border-radius: 50px;
+
+      width: 40px;
+      height: 40px;
+
+      box-shadow: 0 0 0px 4px var(--color-blue-brand3);
+    }
   }
 
+  /*
+  @keyframes gradient {
+    0% {
+      background-position: -100% 0;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+  }*/
+
   h1 {
-    line-height: 0;
+    line-height: 1;
     font-weight: bold;
     color: var(--color-blue-brand3);
+
+    /*
+    color: transparent; 
+
+    background: linear-gradient(
+      to right,
+      var(--color-orange-brand),
+      var(--color-blue-brand3)
+    );
+
+    background-size: 200% 100%;
+    background-position: -100% 0;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    animation: gradient 0.5s ease-in-out forwards; 
+    */
   }
 
   a.signin-btn {
-    padding: 10px;
-    border-radius: 50px;
+    display: inline-flex; /* or inline-block */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
 
+    //border-radius: 50px;
     color: var(--color-blue-brand3);
     border: 2px solid var(--color-blue-brand3);
+
+    transition:
+      color 0.25s ease-in-out,
+      background 0.25s ease-in-out;
+    &:hover {
+      background: var(--color-blue-brand);
+      color: var(--color-white-brand2);
+    }
   }
 }
