@@ -3,9 +3,16 @@
 
 @import "layout/header";
 
+@import "comps/button";
+
 html {
+  overscroll-behavior: none;
+
   body {
     margin: 0;
+
+    height: 100vh;
+
     background: var(--color-white-back);
 
     a {
@@ -18,9 +25,11 @@ html {
     .material-icons {
       line-height: 1;
     }
-  }
 
-  overscroll-behavior: none;
+    .container {
+      min-height: 80%;
+    }
+  }
 }
 
 :root {

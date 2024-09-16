@@ -1,4 +1,4 @@
-@import "../comps/button";
+@import "comps/button";
 
 header.main-header {
   display: flex;
@@ -69,7 +69,8 @@ header.main-header {
     */
   }
 
-  a.signin-btn {
+  a.signin-btn,
+  button.signout-btn {
     @include btn-primary;
   }
 }
