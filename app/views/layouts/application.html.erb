@@ -17,6 +17,12 @@
     <link rel="apple-touch-icon" href="/icon.png">
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+
+<!-- Controller-specific stylesheet -->
+<%= stylesheet_link_tag "pages/#{params[:controller]}", media: 'all' %>
+
+<!-- Action-specific stylesheet -->
+<%= stylesheet_link_tag "pages/#{params[:controller]}_#{params[:action]}", media: 'all' %>
     <%= javascript_importmap_tags %>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
