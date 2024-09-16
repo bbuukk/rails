@@ -29,12 +29,15 @@
                         as="font" type="font/woff2" crossorigin>
     <!-- load icons as stylesheet -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
   </head>
 
   <body>
 
-    <div class="container">
+  <%= render partial: "shared/layout/header" %>
+    <main class="container">
       <%= yield %>
-    </div>
+    </main>
   </body>
 </html>
