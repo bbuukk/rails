@@ -5,12 +5,13 @@
     <h1>TODOMOTO</h1>
   <% end %>
 
-  <% if @user %>
+  
+  <% if @user && @user.persisted? %>
     Logged in as: <%= @user.email %>
-    <%= button_to 'Log out', sign_out_path, method: :delete, class: "signout-btn" %>
+    <%= button_to sign_out_path, method: :delete, class: "signout-btn", title: "Sign out", aria: { label: "Sign out"} do %>
+      <i class="material-icons">logout</i>
+    <% end %>
   <% else %>
-
-
     <%= link_to sign_in_path, class: "signin-btn", title: "Sign in", aria: { label: "Sign in"} do %>
       <i class="material-icons">login</i>
     <% end %>
