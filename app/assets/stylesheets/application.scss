@@ -1,0 +1,28 @@
+@import "layout/header";
+
+html {
+  body {
+    margin: 0;
+    background: var(--color-white-brand);
+
+    a {
+      text-decoration: none;
+    }
+
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  overscroll-behavior: none;
+}
+
+:root {
+  --color-yellow-brand: #fadfa1;
+  --color-red-brand: #c96868;
+  --color-white-brand: #fff4ea;
+  --color-blue-brand: #7eacb5;
+
+  --color-blue-brand2: #d2e0fb;
+  --color-blue-brand3: #8eaccd;
+  --color-white-brand2: #fef9d9;
+}
