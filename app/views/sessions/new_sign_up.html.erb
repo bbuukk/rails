@@ -1,6 +1,6 @@
-.
-<h2>SIGN UP</h2>
 
+<div class="form-container">
+<h2>SIGN UP</h2>
 
 <%= simple_form_for @user do |f| %>
   <%= f.input :email %>
@@ -9,3 +9,9 @@
 
   <%= f.button :submit, "Sign Up" %>
 <% end %>
+
+
+<%= link_to sign_in_path, class: "signin-appeal", title: "Sign in", aria: { label: "Sign in"} do %>
+      Already have an account? Sign in!  
+<% end %>
+<div>
