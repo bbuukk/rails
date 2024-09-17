@@ -2,8 +2,13 @@
 
 <h2>SIGN IN</h2>
 
-<%= simple_form_for :session, url: sign_in_path, method: :post do |f| %>
+<%= simple_form_for :session, url: sign_in_path, method: :post, html: { data: { turbo: false } }  do |f| %>
+  <% if @error %>
+    <div><%= @error%></div>
+  <% end %>
+
   <%= f.input :email, label: 'Email' %>
   <%= f.input :password, label: 'Password', as: :password %>
   <%= f.button :submit, "Sign In" %>
 <% end %>
+

@@ -3,17 +3,14 @@
 class SessionsController < ApplicationController
   def new_sign_in; end
 
-  def new_sign_up
-    @user = User.new
-  end
-
   def create_sign_in
     user = User.find_by(email: params[:session][:email])
     if user&.authenticate(params[:session][:password])
       session[:user_id] = user.id
       redirect_to root_path, notice: 'Logged in successfully'
     else
-      @errors = ['Invalid email or password. Try again.']
+      @error = 'Invalid email or password. Try again.'
+      render :new_sign_in
     end
   end
 

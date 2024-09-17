@@ -1,8 +1,8 @@
-.
+
 <h2>SIGN UP</h2>
 
 
-<%= simple_form_for @user do |f| %>
+<%= simple_form_for @user, html: { data: { turbo: false } }  do |f| %>
   <%= f.input :email %>
   <%= f.input :password %>
   <%= f.input :password_confirmation %>
