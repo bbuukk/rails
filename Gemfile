@@ -30,7 +30,6 @@ end
 group :development do
   gem 'web-console'
 
-  gem 'faker'
   gem 'pry', '~> 0.14.2'
   gem 'rubocop', require: false
 end
@@ -40,5 +39,6 @@ group :test do
   gem 'rspec-rails'
   gem 'selenium-webdriver'
 
+  gem 'faker'
   gem 'simplecov'
 end
