@@ -9,12 +9,13 @@ gem 'pg', '~> 1.1'
 gem 'puma', '>= 5.0'
 gem 'rails', '~> 7.2.1'
 gem 'sprockets-rails'
-gem 'stimulus-rails'
-gem 'turbo-rails'
 
+gem 'sassc-rails'
 gem 'tzinfo-data', platforms: %i[windows jruby]
 
 gem 'bootsnap', require: false
+
+gem 'simple_form'
 
 group :development, :test do
   gem 'debug', platforms: %i[mri windows], require: 'debug/prelude'
