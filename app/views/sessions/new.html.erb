@@ -1,0 +1,19 @@
+
+<div class="form-container">
+
+
+<h2>SIGN IN</h2>
+
+<%= simple_form_for :session, method: :post, url: sign_in_path do |f| %>
+  <%if @error%>
+    <div><%= @error%></div>
+<%end%>
+  <%= f.input :email, label: 'Email' %>
+  <%= f.input :password, label: 'Password', as: :password %>
+  <%= f.button :submit, "Sign In" %>
+<% end %>
+
+<%= link_to new_user_path, class: "signup-appeal", title: "Sign up", aria: { label: "Sign up"} do %>
+      Don't have an account? Sign up! 
+<% end %>
+<div>

@@ -1,0 +1,20 @@
+
+<header class="main-header">
+  <%= link_to "/", aria: { label: "Go to home page" }, title: "Home page", class: "logo-link" do %>
+    <%= image_tag('todomoto_logo.svg', alt: 'logotype', class: 'logo', width: 40, height: 40) %>
+    <h1>TODOMOTO</h1>
+  <% end %>
+
+  
+  <% if @user && @user.persisted? %>
+    Logged in as: <%= @user.email %>
+    <%= button_to sign_out_path, method: :delete, class: "signout-btn", title: "Sign out", aria: { label: "Sign out"} do %>
+      <i class="material-icons">logout</i>
+    <% end %>
+  <% else %>
+    <%= link_to sign_in_path, class: "signin-btn", title: "Sign in", aria: { label: "Sign in"} do %>
+      <i class="material-icons">login</i>
+    <% end %>
+
+  <% end %>
+</header>

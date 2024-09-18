@@ -1,14 +1,13 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  resources :users, only: %i[new create destroy]
+  resources :users, only: %i[create destroy]
 
-  get '/sign_in', to: 'sessions#new_sign_in'
-  post '/sign_in', to: 'sessions#sign_in'
+  get '/users', to: 'users#new', as: :new_user
 
-  delete '/sign_out', to: 'sessions#sign_out'
-
-  get '/users', to: 'sessions#new_sign_up'
+  get '/sign_in', to: 'sessions#new'
+  post '/sign_in', to: 'sessions#create'
+  delete '/sign_out', to: 'sessions#destroy', as: :sign_out
 
   resources :tasks
 
