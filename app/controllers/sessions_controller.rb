@@ -1,13 +1,11 @@
 # frozen_string_literal: true
 
 class SessionsController < ApplicationController
-  def new_sign_in; end
-
-  def new_sign_up
+  def sign_up
     @user = User.new
   end
 
-  def create_sign_in
+  def sign_in
     user = User.find_by(email: params[:session][:email])
     if user&.authenticate(params[:session][:password])
       session[:user_id] = user.id
