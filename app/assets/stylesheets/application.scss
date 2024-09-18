@@ -1,0 +1,47 @@
+@import "reset";
+@import "normalize";
+
+@import "layout/header";
+
+@import "comps/button";
+
+html {
+  overscroll-behavior: none;
+
+  body {
+    margin: 0;
+
+    height: 100vh;
+
+    background: var(--color-white-back);
+
+    a {
+      text-decoration: none;
+    }
+
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+    .material-icons {
+      line-height: 1;
+    }
+
+    .container {
+      min-height: 80%;
+    }
+  }
+}
+
+:root {
+  --color-yellow-brand: #fadfa1;
+  --color-red-brand: #c96868;
+  --color-white-brand: #fff4ea;
+  --color-blue-brand: #7eacb5;
+
+  --color-blue-brand2: #d2e0fb;
+  --color-blue-brand3: #8eaccd;
+  --color-white-brand2: #fef9d9;
+
+  --color-white-back: #f5f5f5;
+  --color-orange-brand: #ff7e5f;
+}

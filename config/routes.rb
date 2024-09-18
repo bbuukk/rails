@@ -8,7 +8,9 @@ Rails.application.routes.draw do
 
   delete '/sign_out', to: 'sessions#sign_out'
 
+
   get '/users', to: 'sessions#new_sign_up'
+
 
   resources :tasks
 

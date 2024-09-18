@@ -1,0 +1,19 @@
+@mixin btn-primary {
+  display: inline-flex; /* or inline-block */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+
+  cursor: pointer;
+
+  //border-radius: 50px;
+  color: var(--color-blue-brand3);
+  border: 2px solid var(--color-blue-brand3);
+
+  transition:
+    color 0.25s ease-in-out,
+    background 0.25s ease-in-out;
+  &:hover {
+    background: var(--color-blue-brand);
+    color: var(--color-white-brand2);
+  }
+}
