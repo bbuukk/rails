@@ -4,7 +4,7 @@
 
 <h2>SIGN IN</h2>
 
-<%= simple_form_for :session, url: sign_in_path, method: :post do |f| %>
+<%= simple_form_for :session, method: :post, url: sign_in_path do |f| %>
   <%if @error%>
     <div><%= @error%></div>
 <%end%>
@@ -13,7 +13,7 @@
   <%= f.button :submit, "Sign In" %>
 <% end %>
 
-<%= link_to sign_up_path, class: "signup-appeal", title: "Sign up", aria: { label: "Sign up"} do %>
+<%= link_to new_user_path, class: "signup-appeal", title: "Sign up", aria: { label: "Sign up"} do %>
       Don't have an account? Sign up! 
 <% end %>
 <div>
