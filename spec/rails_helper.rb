@@ -1,5 +1,14 @@
 # frozen_string_literal: true
 
+require 'simplecov'
+SimpleCov.start do
+  add_filter '/spec/' # Exclude the spec directory from coverage
+  add_filter '/config/' # Exclude the config directory from coverage
+  add_filter '/vendor/' # Exclude the vendor directory from coverage
+end
+
+# Optional: Configure SimpleCov to group files by their directory structure
+SimpleCov.formatters = [SimpleCov::Formatter::HTMLFormatter]
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'

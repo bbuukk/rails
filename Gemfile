@@ -39,6 +39,7 @@ group :test do
   gem 'rspec-rails'
   gem 'selenium-webdriver'
 
+  gem 'coderay'
   gem 'faker'
   gem 'simplecov'
 end
